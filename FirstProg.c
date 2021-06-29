@@ -1,13 +1,21 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int i;
-    float f;
-    double d;
-    char c;
+    double a,b,c,x1,x2,d;
 
-    printf("Size of int = %d\n",sizeof(i));
-    printf("Size of float = %d\n",sizeof(f));
-    printf("Size of double = %d\n",sizeof(d));
-    printf("Size of char = %d\n",sizeof(c));
+    printf("Enter 3 value of a,b & c\n");
+    scanf("%lf %lf %lf",&a,&b,&c);
+
+    d = sqrt(b*b - 4*a*c);
+    x1 = (-b + d)/(2*a);
+    x2 = (-b -d)/(2*a);
+
+    printf("X1 = %.2lf, X2 = %.2lf",x1, x2);
+
+
+
+
+
+
 }

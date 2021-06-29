@@ -1,13 +1,15 @@
 #include<stdio.h>
 
 int main(){
-    int n1, n2, sum;
+    float a, b, c, s, area;
 
-    printf("Enter two numbers: ");
-    scanf("%d %d",&n1,&n2);
+    printf("Enter three numbers: \n");
+    scanf("%f %f %f",&a, &b, &c);
 
-    sum = n1 + n2;
-    printf("%d\n",sum);
+    s = ((a + b + c) / 2);
+    area = sqrt(s*(s-a)*(s-b)*(s-c));
+
+    printf("%f",area);
 
     return 0;
 
